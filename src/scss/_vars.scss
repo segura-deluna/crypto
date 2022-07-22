@@ -2,11 +2,13 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "Inter", sans-serif;
+  --content-width: 1150px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
+  --dark-color: #000;
   --light-color: #fff;
+  --blue-color: #55c2ff;
 }
