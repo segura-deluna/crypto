@@ -6,14 +6,87 @@
   background-repeat: no-repeat;
 
   &__container {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-right: auto;
+
+    @media (max-width: 1024px) {
+      padding-top: 92px;
+      padding-bottom: 92px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @media (max-width: 480px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__title {
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+    color: var(--blue-color);
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 60px;
+      line-height: 73px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 
   &__subtitle {
+    width: 100%;
+    max-width: 480px;
+    font-family: "IBM";
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+    color: var(--light-color);
+    margin-bottom: 50px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 355px;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 230px;
+    }
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 41px;
+    background: #55c2ff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--light-color);
+    border-radius: 8px;
+
+    @media (max-width: 480px) {
+      padding: 10px 30px;
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
