@@ -32,14 +32,14 @@ a {
   text-decoration: none;
 }
 
-.site-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
-}
+// .site-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+// }
 
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
