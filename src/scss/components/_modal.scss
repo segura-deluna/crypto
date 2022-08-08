@@ -8,8 +8,8 @@
   white-space: normal;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .36s ease-in-out, visibility .36s ease-in-out;
-
+  transition-property: opacity, visibility;
+  transition-timing-function: ease-in-out;
 
   &__container {
     position: relative;
@@ -82,11 +82,9 @@
     padding-right: 10px;
     margin-right: 16px;
     font-family: 'IBM', sans-serif;
-
     font-weight: 300;
     font-size: 12px;
     line-height: 16px;
-
   }
 
   &__order {
@@ -106,13 +104,19 @@
     border-radius: 8px;
   }
 
-
   &__close {
     position: absolute;
     top: 14px;
     right: 14px;
     line-height: 0;
     color: var(--blue-color);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: rotate(180deg);
+
+    }
+
     @media (max-width: 480px) {
       top: -36px;
       right: 2px;
