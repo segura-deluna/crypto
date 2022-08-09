@@ -10,6 +10,9 @@
   opacity: 0;
   transition-property: opacity, visibility;
   transition-timing-function: ease-in-out;
+  @media (max-width: 480px) {
+    margin: 20px 0;
+  }
 
   &__container {
     position: relative;
@@ -101,7 +104,18 @@
     text-align: center;
     background-color: var(--blue-color);
     color: var(--light-color);
+    border: 1px solid transparent;
     border-radius: 8px;
+
+    &:hover,
+    &:focus {
+      box-sizing: border-box;
+      border: 1px solid #1C88EB;
+    }
+
+    &:active {
+      background-color: #1C88EB;
+    }
   }
 
   &__close {
@@ -114,7 +128,6 @@
 
     &:hover {
       transform: rotate(180deg);
-
     }
 
     @media (max-width: 480px) {

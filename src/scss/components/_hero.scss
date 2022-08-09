@@ -1,6 +1,14 @@
 .hero {
   background-color: var(--dark-color);
   background-image: url("../img/background.jpg");
+  background-image: image-set(
+                  url("../img/background.avif"),
+                  url("../img/background.webp"),
+  );
+  background-image: -webkit-image-set(
+                  url("../img/background.avif"),
+                  url("../img/background.webp"),
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +56,7 @@
   &__subtitle {
     width: 100%;
     max-width: 480px;
-    font-family: "IBM";
+    font-family: "IBM", sans-serif;
     font-weight: 300;
     font-size: 22px;
     line-height: 29px;
@@ -81,7 +89,18 @@
     font-size: 14px;
     line-height: 17px;
     color: var(--light-color);
+    border: 1px solid transparent;
     border-radius: 8px;
+
+    &:hover,
+    &:focus {
+      box-sizing: border-box;
+      border: 1px solid #1C88EB;
+    }
+
+    &:active {
+      background-color: #1C88EB;
+    }
 
     @media (max-width: 480px) {
       padding: 10px 30px;

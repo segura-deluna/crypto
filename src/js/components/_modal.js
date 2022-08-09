@@ -1,7 +1,7 @@
 const heroBtn = document.querySelector('.hero__btn');
 const overlay = document.querySelector('.overlay');
 const modal = document.querySelector('.modal');
-const modalClose = document.querySelector('.modal__close');
+
 
 overlay.style.transitionDelay = '0.3s';
 modal.style.transitionDelay = '0.3s';
@@ -36,10 +36,10 @@ form.addEventListener('submit', (event) => {
     method: 'post',
     body: JSON.stringify(data)
   })
-    .then(response => response.json())
-    .then(person => {
-      modalTitle.textContent = `${person.name}, ваша заявка успешно отправлена, номер: ${person.id}`;
-    })
+      .then(response => response.json())
+      .then(person => {
+        modalTitle.textContent = `${person.name}, ваша заявка успешно отправлена, номер: ${person.id}`;
+      })
   form.remove();
   setTimeout(() => {
     overlay.classList.remove('overlay_open')
