@@ -1,0 +1,65 @@
+.footer {
+  padding: 40px 0 42px;
+  background-color: $tarawera;
+  color: $light;
+
+  &__container {
+    display: grid;
+    gap: 34px 10px;
+    grid-template-areas:
+  "logo navigation navigation"
+  "copyright . design";
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__navigation {
+    grid-area: navigation;
+    justify-self: start;
+
+    .navigation {
+      &__list {
+        .navigation__item {
+          &:nth-child(1) {
+            margin-right: 40px;
+          }
+
+          @media (max-width: 480px) {
+            margin-right: 0;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            &:nth-child(1) {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      &__link {
+        color: $light;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+  &__design {
+    grid-area: design;
+    justify-self: end;
+    font-size: 12px;
+    color: $light;
+  }
+}
+
+
+

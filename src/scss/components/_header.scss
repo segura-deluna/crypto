@@ -1,17 +1,16 @@
 .header {
   position: relative;
-  z-index: 1;
-  background-color: var(--light-color);
+  width: 100%;
+  z-index: 5;
+  background-color: $light;
 
   &__container {
-    position: relative;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: var(--light-color);
+    background-color: $light;
   }
 
   &__nav-btn {
@@ -26,17 +25,24 @@
     width: 100%;
     max-width: 400px;
     @media (max-width: 768px) {
-      max-width: 450px;
+      max-width: 100%;
       position: absolute;
-      z-index: -1;
+      z-index: -10;
       right: 0;
       left: 0;
       bottom: 0;
-      background-color: var(--light-color);
-      padding: 15px;
+      background-color: $light;
+      padding: 15px 50px 0;
       transition: transform 0.3s ease-in-out;
     }
+
+    @media (max-width: 480px) {
+
+      padding: 0 15px;
+      font-size: 16px;
+    }
   }
+
 
   &__navigation_open {
     transform: translateY(100%);

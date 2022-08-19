@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--dark-color);
+  background-color: $dark;
   background-image: url("../img/background.jpg");
   background-image: image-set(
                   url("../img/background.avif"),
@@ -38,7 +38,7 @@
     font-weight: 700;
     font-size: 100px;
     line-height: 121px;
-    color: var(--blue-color);
+    color: $blue;
     margin-bottom: 20px;
 
     @media (max-width: 768px) {
@@ -60,7 +60,7 @@
     font-weight: 300;
     font-size: 22px;
     line-height: 29px;
-    color: var(--light-color);
+    color: $light;
     margin-bottom: 50px;
 
     @media (max-width: 1024px) {
@@ -88,7 +88,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: var(--light-color);
+    color: $light;
     border: 1px solid transparent;
     border-radius: 8px;
 

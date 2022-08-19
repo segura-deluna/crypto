@@ -8,6 +8,19 @@
     @media (max-width: 768px) {
       justify-content: left;
     }
+
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
+
+    }
+
+    &_header {
+      @media (max-width: 768px) {
+        .navigation__item {
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 
   &__item {
@@ -19,6 +32,6 @@
   }
 
   &__link {
-    color: var(--dark-color);
+    color: $dark;
   }
 }

@@ -7,10 +7,14 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  // colors
-  --dark-color: #000;
-  --light-color: #fff;
-  --gray-color: #858585;
-  --blue-color: #55c2ff;
-  --malibu-color: #68B7FF;
+
 }
+
+
+// colors
+$dark: #000;
+$light: #fff;
+$gray: #858585;
+$blue: #55c2ff;
+$malibu: #68B7FF;
+$tarawera: #08475E;
