@@ -1,0 +1,26 @@
+.about-us {
+  padding: 40px 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    color: $blue;
+    margin-bottom: 35px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__advantage {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  &__exchange-rates {
+    max-width: 380px;
+  }
+}

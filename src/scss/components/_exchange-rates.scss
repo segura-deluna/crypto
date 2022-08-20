@@ -1,0 +1,59 @@
+.exchange-rates {
+  padding: 10px 13px 30px;
+  background-color: $solitude;
+  border-radius: 10px;
+
+
+  &__title {
+    font-family: 'IBM', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    color: $calipso;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $calipso;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 9px;
+      height: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &_up:after {
+      background-image: url('../../img/up.svg');
+    }
+
+    &_down:after {
+      background-image: url('../../img/down.svg');
+    }
+  }
+
+  &__currency {
+    margin-right: auto;
+  }
+
+  &__value {
+    display: block;
+    margin-right: 5px;
+  }
+}

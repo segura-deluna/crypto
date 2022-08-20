@@ -1,0 +1,78 @@
+
+.advantage {
+  &__list-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 54px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    padding: 10px;
+    background-color: $malibu;
+    color: $light;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: .35s;
+
+    &:hover {
+      border-color: $curious;
+    }
+
+    &_active,
+    &:active {
+      background-color: $curious;
+      border-color: $curious;
+    }
+  }
+
+  &__item-content {
+    display: none;
+    max-width: 640px;
+    margin: 0 auto;
+    gap: 40px;
+    font-family: 'IBM', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+
+    &:before {
+      content: '';
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &_active {
+      display: flex;
+    }
+
+    &_convenience:before {
+      background-image: url('../../img/convenience.svg');
+    }
+
+    &_speed:before {
+      background-image: url('../../img/speed.svg');
+    }
+
+    &_quality:before {
+      background-image: url('../../img/quality.svg');
+    }
+
+    &_security:before {
+      background-image: url('../../img/security.svg');
+    }
+  }
+}
