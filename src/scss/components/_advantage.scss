@@ -105,19 +105,19 @@
     }
 
     &_convenience:before {
-      background-image: url('../../img/convenience.svg');
+      background-image: url('../img/convenience.svg');
     }
 
     &_speed:before {
-      background-image: url('../../img/speed.svg');
+      background-image: url('../img/speed.svg');
     }
 
     &_quality:before {
-      background-image: url('../../img/quality.svg');
+      background-image: url('../img/quality.svg');
     }
 
     &_security:before {
-      background-image: url('../../img/security.svg');
+      background-image: url('../img/security.svg');
     }
   }
 }
